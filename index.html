@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="*">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="stylesheet" href="../css/estilos-form.css">
+    <title>AluraGeek</title>
+    <link rel="shortcut icon" href="./img/mando.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="encabezado">
+            <a class="logo" href="./index.html"></a><div class="proyectoname">AluraGeek</div>
+            <!--<div class="encabezado__buscar">
+                <input type="search" placeholder="Buscar" id="buscar" class="buscar__input" data-busqueda>
+                <button class="buscar__boton" data-boton-busqueda></button>
+            </div>-->
+            <!--<div class="encabezado__iconos">
+                <a href="./pages/enviar-video.html" class="encabezado__videos"></a>
+            </div>-->
+        </nav>
+    </header>
+<main class="main_contenido">
+    <seccion class="seccion_productos">
+    <h3 class="productos__titulo">MIS PRODUCTOS :</h3>
+    <ul class="videos__container" alt="videos alura" data-lista></ul>
+    </seccion>
+    <seccion class="seccion_formulario">
+    <form class="container__formulario" data-formulario>
+        <h3 class="formulario__titulo">AGREGAR PRODUCTO :</h3>
+            <div class="formulario__campo">
+                <input name="nombre" class="campo__escrita" required
+                    placeholder="nombre..." id='nombre' data-nombre />
+            </div>
+
+            <div class="formulario__campo">
+                <input name="precio" class="campo__escrita" required pattern="^[0-9,]+$" placeholder="precio..."
+                    id='precio' data-precio />
+            </div>
+    
+            <div class="formulario__campo">
+                <input type="url" name="imagem" class="campo__escrita" required placeholder="imagen" id='imagen'
+                    data-imagen />
+            </div>
+    
+            <div class="formulario__flexboton"><input class="formulario__boton" type="submit" value="Enviar" />
+            <input class="formulario__boton" type="button" value="Limpiar"/></div>
+    </form>
+    </seccion>
+</main>
+
+    <div class="footer">
+        <div class="tituloproyect"><a class="logo" href="./index.html"></a><div class="proyectoname">AluraGeek</div></div>
+        <p class="desarrollo">DESARROLLADO POR JOSEP LEO REYES ROJAS</p>
+        <p class="anio">ALURA LATAM - 2025</p>
+    </div>
+    <script src="./js/mostrarProductos.js" type="module"></script>
+
+</body>
+
+</html>

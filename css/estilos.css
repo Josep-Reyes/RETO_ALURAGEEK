@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    --azul-escuro: #154580;
+    --azul-medio: #3970BE;
+    --azul-claro: #E5F1FF;
+    --cinza-texto: #444444;
+    --cinza-claro: #ECECEC;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color:white;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ESTILOS DE HEADER */
+.encabezado {
+    background-color: #5300C8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0 15px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(../img/encabezado/corazones.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    padding: 20px 45px;
+    cursor: pointer;
+}
+.proyectoname{
+    color: black;
+    font-family: "Press Start 2P", serif;
+    color: #E5E5E5;
+}
+
+.footer{
+    background-color: #5300C8;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    padding: 10px 15px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.tituloproyect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desarrollo{
+    font-family:"IBM Plex Mono", serif;  
+}
+.anio{
+    font-family:"IBM Plex Mono", serif;  
+}
+
+/*
+.encabezado__videos {
+    background-image: url(../img/encabezado/video_call.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+*/
+
+/*ESTILO DE MAIN*/
+.main_contenido{
+display: flex;
+padding: 30px 0px 30px 0px;
+}
+/*.seccion_productos{
+
+
+
+}*/
+.seccion_formulario{
+padding: 0px 30px;
+}
+
+.productos__titulo{
+    color: black;
+    font-family: "Press Start 2P", serif;
+    font-size: 1.4rem;
+    margin-top: 83px;
+    padding: 10px 0px;
+}
+
+.formulario__titulo{
+    color: black;
+    font-family: "Press Start 2P", serif;
+    font-size: 1.4rem;
+}
+
+.formulario__flexboton{
+display: flex;
+justify-content: space-between;
+width: 94%;
+}
